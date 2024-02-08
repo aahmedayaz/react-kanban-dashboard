@@ -5,15 +5,14 @@ import { Link } from 'react-router-dom'
 
 const Sidebar = () => {
   return (
-    <div 
+    <div
       className='
-        tablet:relative s_mobile:absolute
         tablet:w-[20%] 
         bg-[#1b1d20]
         rounded-[25px]
     '>
       <img src={logo} alt=""  className='w-[120px] text-center mx-auto my-0'/>
-      <ul className='flex flex-col gap-1 items-center justify-center'>
+      <ul className='flex flex-col gap-1 items-center justify-center z-50'>
         {
           data.map((item, index) => {
             return (

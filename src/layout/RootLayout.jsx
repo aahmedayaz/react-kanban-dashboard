@@ -13,6 +13,7 @@ const RootLayout = ({children}) => {
           flex 
           p-[15px]
           overflow-hidden
+          
         '>
             <Sidebar />
             <main 

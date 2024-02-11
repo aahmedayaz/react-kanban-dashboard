@@ -8,27 +8,46 @@ const data = [
     {
         title: 'Dashboard',
         icon: <FiHome />,
-        url: '/dashboard'
+        url: '/dashboard',
+        id: 1
     },
     {
         title: 'Projects',
         icon: <GrProjects />,
-        url: '/projects'
+        url: '/projects',
+        id: 2
     },
     {
         title: 'My Tasks',
         icon: <GiHamburgerMenu />,
-        url: '/mytasks'
+        url: '/mytasks',
+        id: 3
     },
     {
         title: 'Calender',
         icon: <SlCalender />,
-        url: '/calender'
+        url: '/calender',
+        id: 4
     },
     {
         title: 'Reports',
         icon: <TbReport />,
-        url: '/reports'
+        url: '/reports',
+        id: 5,
+        sublinks : [
+            {
+                title: 'KANBAN Reports',
+                icon: <TbReport />,
+                url: '/reports/kanban',
+                id: 6
+            },
+            {
+                title: 'Agile Reports',
+                icon: <TbReport />,
+                url: '/reports/agile',
+                id: 7
+            }
+        ]
     },
 ]
 

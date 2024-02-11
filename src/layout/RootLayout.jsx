@@ -7,19 +7,20 @@ const RootLayout = ({children}) => {
         <div 
           className='
           w-[100%] 
-          h-screen 
-          bg-[#121212] 
+          h-screen
+          bg-gradient-to-r
+          from-[rgba(9,29,20,1)]
+          to-[rgba(1,21,19,1)]
           text-white
           flex 
-          p-[15px]
           overflow-hidden
-          
         '>
-            <Sidebar />
+            <Sidebar/>
             <main 
-              className='
+              className={`
                 w-[80%]
-            '>
+                bg-[#081213]
+            `}>
               {children}
             </main>
         </div>
